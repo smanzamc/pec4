@@ -68,7 +68,6 @@ public class AsciiDoctorTemplateResolver extends FileTemplateResolver {
     public AsciiDoctorTemplateResolver(Language language) {
         this.language = language;
         setResolvablePatterns(Set.of(PREFIX + "*"));
-        System.out.println("hi");
     }
 
     @Override
