@@ -55,6 +55,7 @@ public class CSRFGetFlag {
         String host = (req.getHeader("host") == null) ? "NULL" : req.getHeader("host");
         String referer = (req.getHeader("referer") == null) ? "NULL" : req.getHeader("referer");
         String[] refererArr = referer.split("/");
+        System.out.println("HI PEC4");
 
 
         if (referer.equals("NULL")) {
