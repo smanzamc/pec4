@@ -1,9 +1,6 @@
 name: sonar-release
 # This workflow is triggered when publishing a new github release
-on:
-  release:
-    types:
-      - published
+on: [push, pull_request]
 
 env:
   PYTHONUNBUFFERED: 1
