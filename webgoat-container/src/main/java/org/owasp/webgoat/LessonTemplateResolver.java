@@ -65,7 +65,7 @@ public class LessonTemplateResolver extends FileTemplateResolver {
 
     @Override
     protected ITemplateResource computeTemplateResource(IEngineConfiguration configuration, String ownerTemplate, String template, String resourceName, String characterEncoding, Map<String, Object> templateResolutionAttributes) {
-        var templateName = resourceName.substring(PREFIX.length());;
+        var templateName = resourceName.substring(PREFIX.length());
         byte[] resource = resources.get(templateName);
         if (resource == null) {
             try {
