@@ -10,7 +10,7 @@ env:
 
 jobs:
   sonar_release:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     name: Start release process
     steps:
       - name: SL release
@@ -36,7 +36,7 @@ jobs:
           echo "${{ steps.sl_release.outputs.releasability }}"
           echo "${{ steps.sl_release.outputs.release }}"
   maven-central-sync:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs:
       - sonar_release
     steps:
