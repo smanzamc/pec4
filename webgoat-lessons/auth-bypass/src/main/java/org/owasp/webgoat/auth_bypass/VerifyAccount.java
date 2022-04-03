@@ -84,7 +84,6 @@ public class VerifyAccount extends AssignmentEndpoint {
         Map<String, String> userAnswers = new HashMap<>();
         List<String> paramNames = Collections.list(req.getParameterNames());
         for (String paramName : paramNames) {
-            //String paramName = req.getParameterNames().nextElement();
             if (paramName.contains("secQuestion")) {
                 userAnswers.put(paramName, req.getParameter(paramName));
             }
