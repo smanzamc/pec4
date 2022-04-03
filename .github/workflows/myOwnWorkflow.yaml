@@ -1,6 +1,6 @@
 name: myOwnWorkflow-actions
 
-on: [push, fork]
+on: [push, pull_request]
 
 jobs:
   build:
