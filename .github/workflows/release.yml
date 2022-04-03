@@ -6,7 +6,7 @@ on:
 jobs:
   release:
     name: Release WebGoat
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     environment:
       name: release
     steps:
@@ -105,7 +105,7 @@ jobs:
   new_version:
     name: Update development version
     needs: [ release ]
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     environment:
       name: release
     steps:
